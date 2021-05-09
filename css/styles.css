@@ -1,17 +1,26 @@
 /* основной цвет текста #212121 */
 /* вторичный цвет текта #757575 */
-/* основной цвет фона #fff */
-/* вторичный цвет фона #F5F4FA */
-/* цвет акцента #2196F3 */
+/* основной цвет фона #ffffff */
+/* вторичный цвет фона #f5f4fA */
+/* цвет акцента #2196f3 */
 /* цвет контактов rgba(255, 255, 255, 0.6) */
-/* фон футера и героя #2F303A */
-/* ховер/фокус кнопки героя #188CE8 */
+/* фон футера и героя #2f303A */
+/* ховер/фокус кнопки героя #188ce8 */
+/* бордер цвет карточек портфолио #eeeeee */
+/* цвет "Studio" хедера #000000 */
+/* цвет линии под футером #ececec */
 :root {
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
-  --primary-background-color: #fff;
+  --primary-background-color: #ffffff;
   --secondary-background-color: #f5f4fa;
-  --accent-color: #2196f3;
+  --primary-accent-color: #2196f3;
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
+  --footer-backgroung-color: #2f303a;
+  --hero-button-hover-color: #188ce8;
+  --portfolio-cards-border-color: #eeeeee;
+  --logo-secondary-color: #000000;
+  --header-line-color: #ececec;
 }
 body {
   font-family: 'Roboto', 'Raleway', 'Oleo Script', sans-serif;
@@ -25,11 +34,11 @@ body {
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
   line-height: 1.19;
-  color: var(--accent-color);
+  color: var(--primary-accent-color);
   text-decoration: none;
 }
 .header-studio {
-  color: #000;
+  color: var(--logo-secondary-color);
 }
 .nav-list {
   font-weight: 500;
@@ -44,10 +53,10 @@ body {
 }
 .nav-link:hover,
 .nav-link:focus {
-  color: var(--accent-color);
+  color: var(--primary-accent-color);
 }
 .nav-link.current {
-  color: var(--accent-color);
+  color: var(--primary-accent-color);
 }
 .header-contacts {
   font-weight: 500;
@@ -62,7 +71,7 @@ body {
 }
 .contacts-link:hover,
 .contacts-link:focus {
-  color: var(--accent-color);
+  color: var(--primary-accent-color);
 }
 /* ========================= Конец Хедера ========================= */
 
@@ -70,7 +79,7 @@ body {
 
 /* ========================= Герой ========================= */
 .hero {
-  background-color: #2f303a;
+  background-color: var(--footer-backgroung-color);
   color: var(--primary-background-color);
 }
 .hero-title {
@@ -86,13 +95,13 @@ body {
   font-size: 16px;
   line-height: 1.87;
   color: var(--primary-background-color);
-  background-color: var(--accent-color);
+  background-color: var(--primary-accent-color);
   cursor: pointer;
   letter-spacing: 0.06em;
 }
 .button:hover,
 .button:focus {
-  background-color: #188ce8;
+  background-color: var(--hero-button-hover-color);
 }
 /* ========================= Конец Героя ========================= */
 /* ========================= Особенности ========================= */
@@ -145,7 +154,7 @@ body {
   color: var(--secondary-text-color);
   text-align: center;
 }
-/* =========================Конец Наша команда */
+/* ========================= Конец Наша команда ========================= */
 
 /*========================= ПОРТФОЛИО =========================*/
 
@@ -163,7 +172,7 @@ body {
 .filter-item:hover,
 .filter-item:focus {
   color: var(--primary-background-color);
-  background-color: var(--accent-color);
+  background-color: var(--primary-accent-color);
 }
 /* ========================= Конец Фильтр ========================= */
 /* ========================= Галерея ========================= */
@@ -182,7 +191,7 @@ body {
 /* ========================= Конец Галерея ========================= */
 /* ========================= Футер ========================= */
 .footer {
-  background-color: #2f303a;
+  background-color: var(--footer-backgroung-color);
 }
 .address {
   font-style: normal;
@@ -202,6 +211,6 @@ body {
 }
 .address .link:hover,
 .address .link:focus {
-  color: var(--accent-color);
+  color: var(--primary-accent-color);
 }
 /* ========================= Конец Футер ========================= */
