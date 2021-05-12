@@ -9,6 +9,7 @@
 /* бордер цвет карточек портфолио #eeeeee */
 /* цвет "Studio" хедера #000000 */
 /* цвет линии под футером #ececec */
+
 :root {
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
@@ -23,7 +24,7 @@
   --header-line-color: #ececec;
 }
 body {
-  font-family: 'Roboto', 'Raleway', 'Oleo Script', sans-serif;
+  font-family: 'Roboto', 'Raleway', sans-serif;
   font-style: normal;
   background-color: var(--primary-background-color);
   color: var(--primary-text-color);
@@ -90,7 +91,6 @@ body {
   text-transform: uppercase;
 }
 .button {
-  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -163,7 +163,6 @@ body {
   list-style: none;
 }
 .filter-item {
-  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
