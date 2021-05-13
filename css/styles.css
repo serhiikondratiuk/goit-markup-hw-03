@@ -38,7 +38,7 @@ img {
   display: block;
   max-width: 100%;
 }
-/* ================ Контейнер ================ */
+/* ================ Общие стили ================ */
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -56,6 +56,19 @@ body {
   background-color: var(--primary-background-color);
   color: var(--primary-text-color);
   letter-spacing: 0.03em;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 /* ========================= Хедер ========================= */
 .header {
@@ -167,6 +180,9 @@ body {
 }
 /* ========================= Конец Героя ========================= */
 /* ========================= Особенности ========================= */
+.features-section {
+  padding-bottom: 47px;
+}
 .features-list {
   list-style: none;
   padding-left: 0;
@@ -188,6 +204,9 @@ body {
 }
 /* ========================= Конец Оссобенностей ========================= */
 /* ========================= Чем мы занимаемся ========================= */
+.occupations-section {
+  padding-top: 47px;
+}
 .occupations-header {
   font-size: 36px;
   line-height: 1.17;
@@ -287,7 +306,7 @@ body {
 .portfolio-item {
   margin-top: 30px;
   margin-left: 30px;
-  border: 1px solid var(--portfolio-cards-border-color);
+  border-bottom: 1px solid var(--portfolio-cards-border-color);
   max-width: 370px;
 }
 .item-header {
