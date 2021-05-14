@@ -242,7 +242,6 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  padding-bottom: 30px;
 }
 .team-list .item + .item {
   margin-left: 30px;
@@ -262,7 +261,7 @@ body {
   text-align: center;
 }
 .team-list .card-thumb {
-  padding-top: 30px;
+  padding: 30px 32px;
 }
 /* ========================= Конец Наша команда ========================= */
 
@@ -306,7 +305,6 @@ body {
 .portfolio-item {
   margin-top: 30px;
   margin-left: 30px;
-  border-bottom: 1px solid var(--portfolio-cards-border-color);
   max-width: 370px;
 }
 .item-header {
@@ -321,6 +319,9 @@ body {
 }
 .portfolio-list .card-thumb {
   padding: 20px 24px;
+  border-right: 1px solid var(--portfolio-cards-border-color);
+  border-bottom: 1px solid var(--portfolio-cards-border-color);
+  border-left: 1px solid var(--portfolio-cards-border-color);
 }
 /* ========================= Конец Галерея ========================= */
 /* ========================= Футер ========================= */
@@ -346,10 +347,13 @@ body {
 .footer-studio {
   color: var(--primary-background-color);
 }
+.footer-logo {
+  display: block;
+  margin-bottom: 20px;
+}
 .footer-list {
   list-style: none;
   padding-left: 0;
-  margin-top: 20px;
 }
 .footer-list .item + .item {
   margin-top: 9px;
